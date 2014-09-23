@@ -1,13 +1,140 @@
-/*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
- * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the top of the
- * compiled file, but it's generally better to create a new file per style scope.
- *
- *= require_self
- *= require_tree .
- */
+/***** Reset *****/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/***** Styles *****/
+html {
+	width: 100%;
+	-webkit-font-smoothing: antialiased;
+}
+body { 
+	width: 100%;
+	padding: 0;
+	margin: 0;
+	text-align: center;
+	background: url('/assets/background.jpg') top center no-repeat;
+	background-size: cover;
+	background-color: #A1B6D1;
+}
+
+p {
+	line-height: 1.35em;
+	color: #666;
+	padding: 0;
+	margin: 20px 0;
+	font-family: 'Georgia';
+	font-size: 16px;
+	font-style: italic;
+}
+
+p.email {
+	color: #006A6A;
+}
+
+p.email a {
+	display: inline-block;
+	height: 33px; 
+	width: 33px;
+	opacity: 0.5;
+	text-indent: -9999px;
+	background: url('/assets/send.png') top center no-repeat; 
+}
+
+p.email a:hover {
+	opacity: 1;
+	-webkit-transition:all 0.2s ease-in-out;
+}
+
+ul {
+	display: block;
+}
+
+ul li {
+	display: inline-block;
+	margin: 0 5px;
+	text-indent: -9999px;
+}
+
+ul li a {
+	display: block;
+	height: 33px; 
+	width: 33px;
+	opacity: 0.5;
+}
+
+ul li a:hover {
+	opacity: 1;
+	-webkit-transition:all 0.2s ease-in-out;
+}
+
+ul li.twitter a { 
+	background: url('/assets/twitter.png') top center no-repeat; 
+}
+ul li.quora a { 
+	background: url('/assets/quora.png') top center no-repeat;
+}
+ul li.linkedin a { 
+	background: url('/assets/linkedin.png') top center no-repeat;
+}
+ul li.rdio a { 
+	background: url('/assets/rdio.png') top center no-repeat;
+}
+
+.logo h1 a { 
+	width: 115px;
+	height: 135px;
+	display: block;
+	background: url('/assets/diogofreitas.png') top center no-repeat;
+	text-indent: -9999px;
+	padding: 0;
+	margin: 0 auto;
+	border: none;
+}
+
+#content {
+	max-width: 480px;
+	padding: 0 20px;
+	display: block;
+	margin: 5% auto 0;
+}
