@@ -1,144 +1,77 @@
-/***** Reset *****/
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
-body {
-	line-height: 1;
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
+html, body {
+  height: 100%;
 }
 
-/***** Styles *****/
-html {
-	width: 100%;
-	-webkit-font-smoothing: antialiased;
-}
-body { 
-	width: 100%;
-	padding: 0;
-	margin: 0;
-	text-align: center;
-	background: url('/assets/background.jpg') top center no-repeat;
-	background-size: cover;
-	webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-color: #D3C8C0;
+html, body, h1, h2, h3, h4, p, a, div {
+  font-family: "Proxima Nova";
 }
 
-p {
-	line-height: 1.35em;
-	color: #666;
-	padding: 0;
-	margin: 20px 0;
-	font-family: 'Georgia';
-	font-size: 16px;
-	font-style: italic;
+.content-left {
+  background-color: #fff;
+  height: 100%;
+  padding: 0 16px;
+  width: 40%;
+  float: left; 
 }
 
-p.email {
-	color: #006A6A;
-	text-indent: 33px;
+.content-right {
+  background-color: #ff6600;
+  height: 100%;
+  float: left;
+  width: 60%;
 }
 
-p.email a {
-	display: inline-block;
-	height: 33px; 
-	width: 33px;
-	opacity: 0.5;
-	text-indent: -9999px;
-	background: url('/assets/send.png') top center no-repeat; 
+.double-input {
+  float: left;
+  width: 100px;
+  margin-right: 8px;
 }
 
-p.email a:hover {
-	opacity: 1;
-	-webkit-transition:all 0.2s ease-in-out;
+
+form {
+  text-align: center;
 }
 
-ul {
-	display: block;
+
+h2 {
+  font-size: 36px;
+  font-weight: lighter;
 }
 
-ul li {
-	display: inline-block;
-	margin: 0 5px;
-	text-indent: -9999px;
+h4 {
+  color: #999999;
+  padding-bottom: 30px;
 }
 
-ul li a {
-	display: block;
-	height: 33px; 
-	width: 33px;
-	opacity: 0.5;
+span {
+  display: inline-block;
 }
 
-ul li a:hover {
-	opacity: 1;
-	-webkit-transition:all 0.2s ease-in-out;
+.bg-1 {
+  background: url("/assets/1.png") no-repeat center;
+  background-color: #DEE7ED;
+}
+.bg-2 {
+  background: url("/assets/2.png") no-repeat center;
+  background-color: #E6D7CC;
+}
+.bg-3 {
+  background: url("/assets/3.png") no-repeat center;
+  background-color: #DBE4CD;
 }
 
-ul li.twitter a { 
-	background: url('/assets/twitter.png') top center no-repeat; 
-}
-ul li.quora a { 
-	background: url('/assets/quora.png') top center no-repeat;
-}
-ul li.linkedin a { 
-	background: url('/assets/linkedin.png') top center no-repeat;
-}
-ul li.rdio a { 
-	background: url('/assets/rdio.png') top center no-repeat;
+.btn {
+  margin-top: 25px;
 }
 
-.logo h1 a { 
-	width: 115px;
-	height: 135px;
-	display: block;
-	background: url('/assets/diogofreitas.png') top center no-repeat;
-	text-indent: -9999px;
-	padding: 0;
-	margin: 0 auto;
-	border: none;
+.form-group {
+  max-width: 350px;
+  text-align: left;
 }
 
-#content {
-	max-width: 480px;
-	padding: 0 20px;
-	display: block;
-	margin: 5% auto 0;
+.logo {
+  background: url("/assets/qmagico.png") no-repeat;
+  display: block;
+  width: 160px;
+  height: 50px;
 }

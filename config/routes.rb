@@ -1,8 +1,9 @@
 Site::Application.routes.draw do
-
-  root :to => "pages#home";
   
-  match "page/:action", :controller => "pages", :as => :page;
+  root to: 'pages#home'
 
-  # match ':controller(/:action(/:id))(.:format)'
+  match '/home' => 'pages#home'
+  match '/home2' => 'pages#home2'
+  match '/home3' => 'pages#home3'
+
 end

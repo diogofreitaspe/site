@@ -7,26 +7,32 @@
 	<meta name="author" content="Diogo Freitas" />
 	<meta name="robots" content="index, follow">
   <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1">
-  <title>Diogo Freitas</title>
+
+  <link href="assets/css/bootstrap-responsive.css" rel="stylesheet">
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 
   <%= stylesheet_link_tag    "application", :media => "all" %>
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
+  
+  <title>Diogo Freitas</title>
 </head>
 <body>
 
 <header>
 </header>
 
-<div id="content">
+<%= content_for :heading if content_for? :heading %>
 
-  <%= content_for :heading if content_for? :heading %>
+<%= flash_messages %>
 
-  <%= flash_messages %>
+<%= yield %>
 
-  <%= yield %>
-
-</div>
 
 <footer>
 </footer>
