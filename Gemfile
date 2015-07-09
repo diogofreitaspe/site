@@ -1,49 +1,82 @@
-source 'http://rubygems.org'
+source 'https://rubygems.org'
 
-ruby '2.2.2'
+gem 'rails', '3.2.12'
 
-
-# Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '4.2.3'
-# Use sqlite3 as the database for Active Record
-gem 'sqlite3'
-# Use SCSS for stylesheets
-gem 'sass-rails', '~> 5.0'
-# Use Uglifier as compressor for JavaScript assets
-gem 'uglifier', '>= 1.3.0'
-# Use CoffeeScript for .coffee assets and views
-gem 'coffee-rails', '~> 4.1.0'
-# See https://github.com/rails/execjs#readme for more supported runtimes
-# gem 'therubyracer', platforms: :ruby
-
-gem 'activeresource'
-gem 'nokogiri'
-
-# Use jquery as the JavaScript library
 gem 'jquery-rails'
-# Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
-gem 'turbolinks'
-# Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
-gem 'jbuilder', '~> 2.0'
-# bundle exec rake doc:rails generates the API under doc/api.
-gem 'sdoc', '~> 0.4.0', group: :doc
-
-# Use ActiveModel has_secure_password
-# gem 'bcrypt', '~> 3.1.7'
-
-# Use Unicorn as the app server
-# gem 'unicorn'
-
-# Use Capistrano for deployment
-# gem 'capistrano-rails', group: :development
+gem 'rails-i18n'
+gem 'simple_form', '>= 2.0.4'
+gem 'bcrypt-ruby', '>= 3.0'
+gem 'bootstrap-sass', '~> 2.2.2.0'
+# gem 'devise', '~> 2.2'
+# gem 'devise-i18n'
 
 group :development, :test do
-  # Call 'byebug' anywhere in the code to stop execution and get a debugger console
-  gem 'byebug'
-
-  # Access an IRB console on exception pages or by using <%= console %> in views
-  gem 'web-console', '~> 2.0'
+  gem 'sqlite3'
+  
+  # rspec-rails and factory_girl_rails needs to be in 
+  # development group also so that Rails generators work
+  gem 'rspec-rails', '>= 2.0'
+  gem 'factory_girl_rails', '~> 4.1'
+  
 end
 
-# Windows does not include zoneinfo files, so bundle the tzinfo-data gem
-gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+group :development do
+  gem 'better_errors'
+  gem 'binding_of_caller'
+  
+  # If you want full featured Guard, also uncomment your system 
+  # dependent gems in test group
+  # Check https://github.com/guard/guard for installation
+  # Run 'guard init rspec' and edit Guardfile
+  # gem 'guard-rspec'
+  
+end
+
+group :test do 
+  gem 'shoulda-matchers', '>= 1.4.2'
+  gem 'capybara', '>= 2.0'
+  
+  # Guard on MAC OSX
+  # gem 'rb-fsevent', require: true
+  # gem 'growl'
+  
+  # Guard on Linux
+  # gem 'rb-inotify'
+  # gem 'libnotify'
+  
+  # Guard on Windows
+  # gem 'rb-notifu'
+  # gem 'win32console'
+  #
+  # gem 'rb-fchange'
+  # OR
+  # gem 'wdm'
+ 
+end
+
+group :production do
+  gem 'pg', '~> 0.14.1'
+  
+end
+
+group :assets do
+  gem 'sass-rails',   '~> 3.2.5'
+  gem 'coffee-rails', '~> 3.2.2'
+
+  # See https://github.com/sstephenson/execjs#readme for more supported runtimes
+  # gem 'therubyracer', :platforms => :ruby
+
+  gem 'uglifier', '>= 1.3.0'
+end
+
+# To use Jbuilder templates for JSON
+# gem 'jbuilder'
+
+# Use unicorn as the app server
+# gem 'unicorn'
+
+# Deploy with Capistrano
+# gem 'capistrano'
+
+# To use debugger
+# gem 'debugger'
