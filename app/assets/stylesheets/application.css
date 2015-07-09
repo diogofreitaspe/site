@@ -6,27 +6,23 @@ html, body, h1, h2, h3, h4, p, a, div {
   font-family: "Proxima Nova";
 }
 
-.content-left {
-  background-color: #fff;
+.full-height {
   height: 100%;
-  padding: 0 16px;
-  width: 40%;
-  float: left; 
-}
-
-.content-right {
-  background-color: #ff6600;
-  height: 100%;
-  float: left;
-  width: 60%;
 }
 
 .double-input {
   float: left;
-  width: 100px;
-  margin-right: 8px;
 }
 
+.no-margin {
+  padding: 0px;
+  margin: 0px;
+}
+
+.no-margin-right {
+  padding-right: 0px;
+  margin-right: 0px;
+}
 
 form {
   text-align: center;
@@ -65,7 +61,6 @@ span {
 }
 
 .form-group {
-  max-width: 350px;
   text-align: left;
 }
 

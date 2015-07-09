@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="utf-8" />
-	<meta name="description" content="Diogo Freitas" />
-	<meta name="keywords" content="Diogo Freitas, diogofreitaspe, design, designer, Recife, Pernambuco, UX, Engenharia, Computação, ITA, user experience, diogo, freitas, QMágico" />
-	<meta name="author" content="Diogo Freitas" />
-	<meta name="robots" content="index, follow">
+  <meta charset="utf-8" />
+  <meta name="description" content="Diogo Freitas" />
+  <meta name="keywords" content="Diogo Freitas, diogofreitaspe, design, designer, Recife, Pernambuco, UX, Engenharia, Computação, ITA, user experience, diogo, freitas, QMágico" />
+  <meta name="author" content="Diogo Freitas" />
+  <meta name="robots" content="index, follow">
   <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1">
 
   <link href="assets/css/bootstrap-responsive.css" rel="stylesheet">
@@ -27,11 +27,15 @@
 <header>
 </header>
 
-<%= content_for :heading if content_for? :heading %>
+<div class="container-fluid full-height">
+  <div class="row full-height">
+      <%= content_for :heading if content_for? :heading %>
 
-<%= flash_messages %>
+      <%= flash_messages %>
 
-<%= yield %>
+      <%= yield %>
+  </div>
+</div>
 
 
 <footer>
