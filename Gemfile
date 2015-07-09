@@ -1,4 +1,4 @@
-source 'https://rubygems.org'
+source 'http://rubygems.org'
 
 ruby '1.9.3'
 
@@ -23,7 +23,7 @@ group :development, :test do
 end
 
 group :development do
-  gem 'better_errors'
+  gem 'better_errors', '~> 1.1.0'
   gem 'binding_of_caller'
   
   # If you want full featured Guard, also uncomment your system 
