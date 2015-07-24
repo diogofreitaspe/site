@@ -13,5 +13,19 @@ Site::Application.routes.draw do
   match '/home7' => 'pages#home7'
   match '/home8' => 'pages#home8'
   match '/home9' => 'pages#home9'
+  
+
+  match '/aluno' => 'pages#aluno'
+  match '/aluno2' => 'pages#aluno2'
+  match '/aluno3' => 'pages#aluno3'
+  match '/aluno4' => 'pages#aluno4'
+  match '/aluno4a' => 'pages#aluno4a'
+  match '/aluno4b' => 'pages#aluno4b'
+  match '/aluno5' => 'pages#aluno5'
+  match '/aluno5b' => 'pages#aluno5b'
+  match '/aluno6' => 'pages#aluno6'
+  match '/aluno7' => 'pages#aluno7'
+  match '/aluno8' => 'pages#aluno8'
+  match '/aluno9' => 'pages#aluno9'
 
 end
