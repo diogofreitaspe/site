@@ -28,4 +28,10 @@ Site::Application.routes.draw do
   match '/aluno8' => 'pages#aluno8'
   match '/aluno9' => 'pages#aluno9'
 
+  match '/professor' => 'pages#perfil'
+  match '/criar_caderno' => 'pages#criar_caderno'
+  match '/caderno_vazio' => 'pages#caderno_vazio'
+  match '/caderno_secao' => 'pages#caderno_secao'
+  match '/fim' => 'pages#fim'
+
 end
